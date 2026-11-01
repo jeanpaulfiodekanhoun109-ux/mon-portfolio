@@ -10,24 +10,33 @@
 
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">JP<span>.</span></h2>
+    
+<header>
+    <nav>
+        <h2 class="logo">JP Portofolio<span></span></h2>
 
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <!-- Bouton hamburger -->
+        <button id="menu-toggle" class="menu-toggle"
+                type="button" aria-label="Ouvrir le menu"
+                aria-expanded="false">
+            ☰
+        </button>
 
-          <button id="theme-toggle" type="button" class="theme-toggle">
-    🌙 Mode sombre
-</button>
-        </nav>
-    </header>
+        <!-- Liens de navigation -->
+        <ul id="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="theme-toggle" type="button" class="theme-toggle">
+            🌙 Mode sombre
+        </button>
+    </nav>
+</header>
 
     <main>
 
@@ -279,32 +288,54 @@
 </section>
 
 
-        <section id="competences" class="section">
-            <h2>Mes compétences</h2>
+<section id="competences" class="section">
+    <h2>Mes compétences</h2>
 
-            <div class="cartes">
-                <article class="carte">
-                    <h3>C++</h3>
-                    <p>Apprentissage de la programmation.</p>
-                </article>
+    <div class="cartes">
 
-                <article class="carte">
-                    <h3>HTML</h3>
-                    <p>Structure des pages web.</p>
-                </article>
-
-                <article class="carte">
-                    <h3>CSS</h3>
-                    <p>Design et mise en forme des sites.</p>
-                </article>
-
-                <article class="carte">
-                    <h3>Linux</h3>
-                    <p>Découverte du système et du terminal.</p>
-                </article>
+        <article class="carte">
+            <h3>C++</h3>
+            <p>Apprentissage de la programmation.</p>
+            <div class="progression">
+                <div class="barre" style="--niveau: 40%">
+                    <span>40%</span>
+                </div>
             </div>
-        </section>
-       
+        </article>
+
+        <article class="carte">
+            <h3>HTML</h3>
+            <p>Structure des pages web.</p>
+            <div class="progression">
+                <div class="barre" style="--niveau: 65%">
+                    <span>65%</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="carte">
+            <h3>CSS</h3>
+            <p>Design et mise en forme des sites.</p>
+            <div class="progression">
+                <div class="barre" style="--niveau: 55%">
+                    <span>55%</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="carte">
+            <h3>Linux</h3>
+            <p>Découverte du système et du terminal.</p>
+            <div class="progression">
+                <div class="barre" style="--niveau: 35%">
+                    <span>35%</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
 
 <section id="contact" class="section contact-section">
 
@@ -322,12 +353,12 @@
             <span class="contact-name">E-mail</span>
         </a>
 
-        <a href="tel:+2290162926202" class="contact-card">
+        <a href="tel:+2290162916202" class="contact-card">
             <span class="contact-icon">📞</span>
             <span class="contact-name">Téléphone</span>
         </a>
 
-        <a href="https://wa.me/2290162926202" target="_blank" rel="noopener noreferrer" class="contact-card">
+        <a href="https://wa.me/2290162916202" target="_blank" rel="noopener noreferrer" class="contact-card">
             <span class="contact-icon">💬</span>
             <span class="contact-name">WhatsApp</span>
         </a>
@@ -364,6 +395,17 @@
 
     <div class="projets-container">
 
+        
+<section id="projets" class="projets">
+    <h2>Mes projets</h2>
+
+    <p class="projets-intro">
+        Découvrez les projets que je réalise
+        et les idées que je développe.
+    </p>
+
+    <div class="projets-container">
+
         <!-- PROJET 1 -->
         <div class="projet-card">
             <div class="projet-icon">💻</div>
@@ -375,21 +417,27 @@
             <span class="statut termine-bientot">
                 Presque terminé
             </span>
-            <p class="technologies">HTML • CSS</p>
+            <p class="technologies">HTML • CSS • JavaScript</p>
+            <a href="https://github.com/jeanpaulfiodekanhoun109-ux"
+               target="_blank" rel="noopener noreferrer"
+               class="projet-btn">Voir mon GitHub</a>
         </div>
 
         <!-- PROJET 2 -->
         <div class="projet-card">
-            <div class="projet-icon">📁</div>
+            <div class="projet-icon">🔐</div>
             <h3>Coffre-fort numérique</h3>
             <p>
-                Un site pour stocker, organiser et consulter
+                Un projet pour stocker, organiser et consulter
                 mes documents PDF personnels en toute sécurité.
             </p>
             <span class="statut a-venir">À développer</span>
             <p class="technologies">
                 HTML • CSS • JavaScript
             </p>
+            <span class="projet-btn projet-indisponible">
+                Bientôt disponible
+            </span>
         </div>
 
         <!-- PROJET 3 -->
@@ -402,19 +450,20 @@
             </p>
             <span class="statut a-venir">À développer</span>
             <p class="technologies">Python</p>
+            <span class="projet-btn projet-indisponible">
+                Bientôt disponible
+            </span>
         </div>
 
     </div>
 </section>
+</main>
 
- 
+<footer id="footer-principal">
+    <p>© 2026 FIODEKANHOUN Cocou Jean Paul — Mon portfolio</p>
+</footer>
 
-    </main>
-
-    <footer>
-        <p>© 2026 FIODEKANHOUN Cocou Jean Paul — Mon portfolio</p>
-    </footer>
-
-</body>
 <script src="script.js"></script>
+</body>
 </html>
+

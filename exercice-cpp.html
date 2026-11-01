@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon code C++ - Jean Paul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="section">
+        <h2>Mon programme C++</h2>
+        <p>Voici mon véritable fichier source :</p>
+
+        <pre id="code-source">Chargement de mon programme...</pre>
+
+        <a href="index.html" class="bouton">
+            Retour au portfolio
+        </a>
+    </section>
+
+    <script>
+        fetch("exercice.cpp")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Fichier introuvable");
+                }
+                return response.text();
+            })
+            .then(code => {
+                document.getElementById("code-source")
+                    .textContent = code;
+            })
+            .catch(() => {
+                document.getElementById("code-source")
+                    .textContent = "Impossible de charger le fichier exercice.cpp";
+            });
+    </script>
+
+</body>
+</html>

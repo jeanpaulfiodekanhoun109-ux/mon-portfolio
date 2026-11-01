@@ -1528,3 +1528,602 @@ header nav ul li a:hover {
     max-width: 190px;
     z-index: 3;
 }
+/* Adaptation de la section Contact sur téléphone */
+@media screen and (max-width: 600px) {
+    .contact-cartes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .contact-carte {
+        width: 100%;
+        min-width: 0;
+        min-height: 115px;
+        padding: 15px 8px;
+        box-sizing: border-box;
+    }
+
+    .contact-carte i {
+        font-size: 27px;
+    }
+
+    .contact-carte p,
+    .contact-carte span {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Réduire l'en-tête sur téléphone */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px 12px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    header nav a {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    header nav {
+        gap: 8px;
+    }
+
+    .theme-toggle {
+        font-size: 12px;
+        padding: 7px 9px;
+    }
+}
+
+/* En-tête adapté aux téléphones */
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 8px 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    header nav .logo {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    header .theme-toggle {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+
+/* Bouton hamburger */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: #facc15;
+    border: 2px solid #facc15;
+    border-radius: 8px;
+    font-size: 27px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+
+/* Navigation sur téléphone */
+@media screen and (max-width: 600px) {
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 5px 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    header nav ul.menu-ouvert {
+        display: flex;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    header .theme-toggle {
+        font-size: 12px;
+        padding: 6px 9px;
+    }
+}
+
+/* Éviter que le menu cache les titres des sections */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Bouton hamburger */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: #facc15;
+    border: 2px solid #facc15;
+    border-radius: 8px;
+    font-size: 27px;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+
+/* Navigation sur téléphone */
+@media screen and (max-width: 600px) {
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 5px 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    header nav ul.menu-ouvert {
+        display: flex;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    header .theme-toggle {
+        font-size: 12px;
+        padding: 6px 9px;
+    }
+}
+
+/* Éviter que le menu cache les titres des sections */
+section {
+    scroll-margin-top: 80px;
+}
+@media screen and (max-width: 600px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+}
+/* En-tête toujours visible sur ordinateur et téléphone */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+/* Navigation : une seule section visible */
+main > section.section-cachee {
+    display: none !important;
+}
+
+/* Animation de la section affichée */
+main > section.section-active {
+    animation: apparition 0.4s ease;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Masquer le pied de page pendant la navigation */
+footer {
+    display: none;
+}
+
+/* Zone du pied de page */
+.zone-footer {
+    display: none;
+    text-align: center;
+    padding: 20px 12px;
+}
+
+.zone-footer.footer-visible {
+    display: block;
+}
+
+#footer-toggle,
+#retour-section {
+    background: #facc15;
+    color: #0f172a;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px auto;
+}
+
+#footer-principal {
+    display: block;
+    background: #111c32;
+    color: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    margin: 15px auto;
+}
+
+#footer-principal p {
+    color: white;
+    margin: 0;
+}
+footer {
+    display: none;
+}/* Zone du pied de page */
+.zone-footer {
+    text-align: center;
+    padding: 20px 12px;
+}
+
+/* Bouton pour afficher le pied de page */
+#footer-toggle {
+    background: #facc15;
+    color: #0f172a;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px auto;
+}
+
+/* Pied de page caché au départ */
+#footer-principal {
+    display: none !important;
+    background: #111c32;
+    color: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    margin: 15px auto;
+}
+
+/* Pied de page visible après le clic */
+#zone-footer.footer-visible #footer-principal {
+    display: block !important;
+}
+
+#footer-principal p {
+    color: white;
+}
+
+/* Bouton retour */
+#retour-section {
+    background: #facc15;
+    color: #0f172a;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* CORRECTION DE LA ZONE DU PIED DE PAGE */
+.zone-footer {
+    display: block !important;
+    text-align: center;
+    padding: 20px 12px;
+}
+
+#footer-principal {
+    display: none !important;
+}
+
+#zone-footer.footer-visible #footer-principal {
+    display: block !important;
+}
+/* =================================
+   ANIMATIONS DU PORTFOLIO
+================================= */
+
+/* Apparition progressive des sections */
+@keyframes apparitionDouce {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main > section.section-active {
+    animation: apparitionDouce 0.7s ease both;
+}
+
+/* Animation des boutons au survol */
+button,
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation des liens du menu */
+header nav ul li a {
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Respecter les préférences de réduction des animations */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =================================
+   EFFETS SUR LES CARTES
+================================= */
+
+.competence,
+.competence-card,
+.projet,
+.projet-card,
+.carte-projet {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Effet au passage de la souris */
+.competence:hover,
+.competence-card:hover,
+.projet:hover,
+.projet-card:hover,
+.carte-projet:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* =================================
+   ANIMATION DES CARTES DE COMPÉTENCES
+================================= */
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.carte {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/* Effet au passage de la souris */
+.carte:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Animation des titres */
+.carte h3 {
+    transition: color 0.3s ease;
+}
+
+.carte:hover h3 {
+    color: #ffd700;
+}
+
+/* =================================
+   DESIGN MODERNE DES PROJETS
+================================= */
+
+.projets {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projets h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.projets-intro {
+    margin-bottom: 35px;
+}
+
+.projets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.projet-card {
+    background: #172554;
+    color: white;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.projet-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.projet-card h3 {
+    color: #ffd700;
+    margin-bottom: 12px;
+}
+
+.projet-card p {
+    line-height: 1.6;
+}
+
+.statut {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 20px;
+    margin: 12px 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.termine-bientot {
+    background: #d97706;
+    color: white;
+}
+
+.a-venir {
+    background: #334155;
+    color: #facc15;
+}
+
+.technologies {
+    color: #facc15;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.projet-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #ffd700;
+    color: #172554;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.projet-btn:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+}
+
+.projet-indisponible {
+    background: #475569;
+    color: white;
+    cursor: default;
+}
+/* Pied de page toujours visible */
+footer#footer-principal {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #172554;
+    color: white;
+    margin-top: 30px;
+}
