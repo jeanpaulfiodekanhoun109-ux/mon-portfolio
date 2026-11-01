@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio | Jean Paul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">JP<span>.</span></h2>
+
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+          <button id="theme-toggle" type="button" class="theme-toggle">
+    🌙 Mode sombre
+</button>
+        </nav>
+    </header>
+
+    <main>
+
+<section id="accueil" class="accueil">
+
+    <div class="accueil-contenu">
+
+        <p class="bienvenue">BONJOUR, JE SUIS</p>
+
+        <h1>
+            FIODEKANHOUN
+            <span>Cocou Jean Paul</span>
+        </h1>
+
+        <p class="sous-titre-accueil">
+            INGÉNIEUR INFORMATIQUE EN DEVENIR
+        </p>
+
+        <p class="presentation-accueil">
+            Passionné par l'informatique, la programmation et les
+            nouvelles technologies, je développe progressivement
+            mes compétences pour concevoir des solutions numériques.
+
+            Je m'intéresse particulièrement au développement web,
+            à Linux et surtout à la cybersécurité, qui représente
+            l'une de mes grandes passions.
+
+            Mon ambition est d'apprendre à protéger les systèmes,
+            les réseaux et les données contre les cyberattaques.
+        </p>
+
+        <div class="accueil-boutons">
+
+            <a href="#projets" class="bouton bouton-projets">
+                Voir mes projets →
+            </a>
+
+            <a href="#contact" class="bouton bouton-contact">
+                Contactez-moi →
+            </a>
+
+            <a href="cv-jean-paul.pdf" class="bouton bouton-cv" download>
+                <i class="fa-solid fa-download"></i>
+                Télécharger mon CV
+            </a>
+
+        </div>
+
+        <button id="message-btn" class="bouton-message" type="button">
+            Un petit message ✉
+        </button>
+
+        <p id="message" aria-live="polite"></p>
+
+    </div>
+
+    <div class="accueil-visuel">
+
+        <img src="photo.jpg"
+             alt="Photo de Cocou Jean Paul"
+             class="photo-profil">
+
+        <div class="photo-legende">
+            <span>MON PROFIL</span>
+            <strong>Informatique & Cybersécurité</strong>
+        </div>
+        </div>
+
+    </div>
+
+</section>
+
+    
+
+
+
+<section id="apropos" class="section apropos-section">
+
+    <p class="bienvenue">QUI SUIS-JE ?</p>
+    <h2>Mon profil en un coup d'œil</h2>
+
+    <p class="apropos-intro">
+        Quelques informations sur mon parcours académique,
+        mes centres d'intérêt et mes objectifs professionnels.
+    </p>
+
+    <div class="profil-container">
+
+        <div class="profil-card">
+            <span class="profil-icon">🎓</span>
+            <h3>Programme</h3>
+            <p>Génie Informatique et Télécommunications</p>
+        </div>
+
+        <div class="profil-card">
+            <span class="profil-icon">🏛️</span>
+            <h3>Université</h3>
+            <p>EPAC, Université d'Abomey-Calavi</p>
+        </div>
+
+        <div class="profil-card">
+            <span class="profil-icon">📚</span>
+            <h3>Année d'étude</h3>
+            <p>Troisième année</p>
+        </div>
+
+        <div class="profil-card">
+            <span class="profil-icon">🏆</span>
+            <h3>Diplôme attendu</h3>
+            <p>2029</p>
+        </div>
+
+        <div class="profil-card">
+            <span class="profil-icon">🔐</span>
+            <h3>Focus principal</h3>
+            <p>Cybersécurité</p>
+        </div>
+
+        <div class="profil-card">
+            <span class="profil-icon">💻</span>
+            <h3>Apprentissage</h3>
+            <p>fortran90,SQL, JavaScript,Base de la cybersécurité et Python</p>
+        </div>
+
+    </div>
+
+    <div class="localisation-container">
+
+        <h3>Mes origines et ma localisation</h3>
+
+        <div class="localisation-grid">
+
+            <div>
+                <span>📍</span>
+                <h4>Basé dans</h4>
+                <p>Abomey-Calavi, Bénin</p>
+            </div>
+
+            <div>
+                <span>🏡</span>
+                <h4>Originaire de</h4>
+                <p>Houéyogbé, Mono, Bénin</p>
+            </div>
+
+            <div>
+                <span>🏫</span>
+                <h4>Étudie à</h4>
+                <p>EPAC, Abomey-Calavi</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="parcours" class="section parcours-section">
+
+    <p class="bienvenue">MON ÉVOLUTION</p>
+    <h2>Mon parcours académique</h2>
+
+    <p class="parcours-intro">
+        De mes premiers pas à l'école primaire jusqu'à mes études
+        universitaires, chaque étape représente une expérience,
+        un apprentissage et une avancée vers mes objectifs.
+    </p>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-date">2018</div>
+            <div class="timeline-card">
+                <span class="diplome-icon">🎓</span>
+                <h3>Certificat d'études primaires (CEP)</h3>
+                <h4>École primaire privée PACIFIQUE</h4>
+                <p>📍 Doutou, Houéyogbé</p>
+                <span class="diplome-tag">CEP obtenu</span>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2021</div>
+            <div class="timeline-card">
+                <span class="diplome-icon">📘</span>
+                <h3>Brevet d'études du premier cycle (BEPC)</h3>
+                <h4>CEG 1 Doutou</h4>
+                <p>📍 Houéyogbé</p>
+                <span class="diplome-tag">BEPC obtenu</span>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-card">
+                <span class="diplome-icon">🏆</span>
+                <h3>Baccalauréat (BAC)</h3>
+                <h4>CEG 1 Doutou</h4>
+                <p>📍 Houéyogbé</p>
+                <span class="diplome-tag">BAC obtenu</span>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2024 - Aujourd'hui</div>
+            <div class="timeline-card">
+                <span class="diplome-icon">💻</span>
+                <h3>Études universitaires</h3>
+                <h4>EPAC, Université d'Abomey-Calavi</h4>
+                <p>📍 Abomey-Calavi, Bénin</p>
+                <p>Génie Informatique et Télécommunications</p>
+                <span class="diplome-tag en-cours">Troisième année — En cours</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="avenir-card">
+
+        <p class="bienvenue">CAP SUR L'AVENIR</p>
+
+        <h2>Mes ambitions professionnelles</h2>
+
+        <div class="avenir-bloc">
+            <span>🔐</span>
+            <div>
+                <h3>Mon objectif</h3>
+                <p>
+                    Devenir ingénieur informatique spécialisé
+                    en cybersécurité.
+                </p>
+            </div>
+        </div>
+
+        <div class="avenir-bloc">
+            <span>🚀</span>
+            <div>
+                <h3>Ma vision</h3>
+                <p>
+                    Apporter des solutions informatiques et
+                    télécoms au sein de ma société, en mettant
+                    mes connaissances au service de l'innovation
+                    et du développement technologique.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <section id="competences" class="section">
+            <h2>Mes compétences</h2>
+
+            <div class="cartes">
+                <article class="carte">
+                    <h3>C++</h3>
+                    <p>Apprentissage de la programmation.</p>
+                </article>
+
+                <article class="carte">
+                    <h3>HTML</h3>
+                    <p>Structure des pages web.</p>
+                </article>
+
+                <article class="carte">
+                    <h3>CSS</h3>
+                    <p>Design et mise en forme des sites.</p>
+                </article>
+
+                <article class="carte">
+                    <h3>Linux</h3>
+                    <p>Découverte du système et du terminal.</p>
+                </article>
+            </div>
+        </section>
+       
+
+<section id="contact" class="section contact-section">
+
+    <h2>Me contacter</h2>
+
+    <p class="contact-intro">
+        Tu souhaites discuter d'un projet ou collaborer avec moi ?
+        Retrouvons-nous sur mes différents réseaux !
+    </p>
+
+    <div class="contact-container">
+
+        <a href="mailto:jeanpaulfiodekanhoun109@gmail.com" class="contact-card">
+            <span class="contact-icon">📧</span>
+            <span class="contact-name">E-mail</span>
+        </a>
+
+        <a href="tel:+2290162926202" class="contact-card">
+            <span class="contact-icon">📞</span>
+            <span class="contact-name">Téléphone</span>
+        </a>
+
+        <a href="https://wa.me/2290162926202" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon">💬</span>
+            <span class="contact-name">WhatsApp</span>
+        </a>
+
+        <a href="https://github.com/jeanpaulfiodekanhoun109-ux" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon">🐙</span>
+            <span class="contact-name">GitHub</span>
+        </a>
+
+        <a href="https://www.snapchat.com/add/jeanpaulfiodeka?share_id=7svhRxo0dfw&amp;locale=fr-FR" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon">👻</span>
+            <span class="contact-name">Snapchat</span>
+        </a>
+
+        <a href="https://www.instagram.com/jp.voltex05?dlrf=a3QydTIwd2kyaHdp" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon">📸</span>
+            <span class="contact-name">Instagram</span>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61593524875428" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon">📘</span>
+            <span class="contact-name">Facebook</span>
+        </a>
+
+    </div>
+
+</section>
+<section id="projets" class="projets">
+    <h2>Mes projets</h2>
+    <p class="projets-intro">
+        Découvrez les projets que je réalise
+        et les idées que je développe.
+    </p>
+
+    <div class="projets-container">
+
+        <!-- PROJET 1 -->
+        <div class="projet-card">
+            <div class="projet-icon">💻</div>
+            <h3>Mon portfolio personnel</h3>
+            <p>
+                Un site web personnel pour présenter
+                mon parcours, mes compétences et mes réalisations.
+            </p>
+            <span class="statut termine-bientot">
+                Presque terminé
+            </span>
+            <p class="technologies">HTML • CSS</p>
+        </div>
+
+        <!-- PROJET 2 -->
+        <div class="projet-card">
+            <div class="projet-icon">📁</div>
+            <h3>Coffre-fort numérique</h3>
+            <p>
+                Un site pour stocker, organiser et consulter
+                mes documents PDF personnels en toute sécurité.
+            </p>
+            <span class="statut a-venir">À développer</span>
+            <p class="technologies">
+                HTML • CSS • JavaScript
+            </p>
+        </div>
+
+        <!-- PROJET 3 -->
+        <div class="projet-card">
+            <div class="projet-icon">🎮</div>
+            <h3>Mon jeu Python</h3>
+            <p>
+                Un petit jeu vidéo créé avec Python
+                pour développer mes compétences en programmation.
+            </p>
+            <span class="statut a-venir">À développer</span>
+            <p class="technologies">Python</p>
+        </div>
+
+    </div>
+</section>
+
+ 
+
+    </main>
+
+    <footer>
+        <p>© 2026 FIODEKANHOUN Cocou Jean Paul — Mon portfolio</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
